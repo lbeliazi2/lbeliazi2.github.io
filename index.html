@@ -14,16 +14,18 @@
 <body>
 <header>
     <div class="header-body">
-        <p class="cal-sans-regular">@lbeliazi2</p>
+        <h1>@lbeliazi2</h1>
         <nav>
             <button class="cal-sans-regular tab-button active" data-tab="profil">About me</button>
-            <button class="cal-sans-regular tab-button" data-tab="experience">Projects</button>
-            <button class="cal-sans-regular tab-button" data-tab="certifications">Contact</button>
+            <button class="cal-sans-regular tab-button" data-tab="experience">Experience</button>
+            <button class="cal-sans-regular tab-button" data-tab="projects">Projects</button>
+            <button class="cal-sans-regular tab-button" data-tab="certifications">Certifications</button>
         </nav>
         <div class="network-icons">
             <a class="fa fa-linkedin" aria-hidden="true"
                href="https://www.linkedin.com/in/l%C3%A9na-beliazi-b1b231178/"></a>
             <a class="fa fa-github" aria-hidden="true" href="https://github.com/lbeliazi2"></a>
+            <a href="assets/CV_Léna_BELIAZI%20(Anglais).png" download class=" fa fa-envelope cv-button"></a>
         </div>
     </div>
 </header>
@@ -31,13 +33,10 @@
 
 <section id="profil" class="active">
     <div class="header-section">
-        <img src="BELIAZI_Léna_IF.jpg"
+        <img src="assets/BELIAZI_Léna_IF.jpg"
              class="header-image"/>
-        <h1 class="cal-sans-regular">Je suis développeuse full stack Java/Angular, curieuse et passionnée par
-            l'exploration de nouveaux langages et projets innovants.</h1>
-        <p class="lato-light">Forte d’une expertise en développement Java et Angular, je suis toujours à la recherche de
-            nouveaux défis techniques. J’aime apprendre de nouveaux langages, expérimenter des outils modernes et
-            contribuer à des projets variés qui me permettent de sortir de ma zone de confort.</p>
+        <h1 style="font-size: 3rem; text-align: center">I am a full-stack Java/Angular developer, curious and passionate about exploring new programming languages and innovative projects.</h1>
+        <p style="text-align: center">With expertise in Java and Angular development, I am always on the lookout for new technical challenges. I enjoy learning new languages, experimenting with modern tools, and contributing to diverse projects that push me out of my comfort zone.</p>
         <p></p>
     </div>
     <div class="carousel-wrapper">
@@ -82,45 +81,165 @@
         </div>
     </div>
 
-    <div class="project-card">
-        <div class="image-container">
-            <img src="https://via.placeholder.com/300x200" alt="Aperçu du projet">
+        <h2 style="text-align: center;">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Languages</h3>
+                <ul>
+                    <li>Java 11+</li>
+                    <li>C, C++, C#</li>
+                    <li>TypeScript</li>
+                    <li>HTML/CSS</li>
+                    <li>React</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Frameworks</h3>
+                <ul>
+                    <li>Spring Framework (5.x, 6.x)</li>
+                    <li>Spring Boot (≥ 2.7.0)</li>
+                    <li>Angular 13+</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Containerization</h3>
+                <ul>
+                    <li>Kubernetes</li>
+                    <li>Docker</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Database</h3>
+                <ul>
+                    <li>PostgreSQL</li>
+                    <li>Liquibase</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Tests</h3>
+                <ul>
+                    <li>JUnit</li>
+                    <li>Mockito</li>
+                    <li>Cucumber</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Tools & Methodologies</h3>
+                <ul>
+                    <li>Git (GitHub & GitLab)</li>
+                    <li>Jenkins</li>
+                    <li>OpenShift</li>
+                    <li>Scrum methodology</li>
+                    <li>Unity</li>
+                </ul>
+            </div>
         </div>
-        <h3 class="project-title">Nom du Projet</h3>
-        <p class="project-description">
-            Ceci est une petite description du projet, de ses objectifs ou des fonctionnalités développées.
-        </p>
-        <div class="project-tags">
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-            <span class="tag">JavaScript</span>
-        </div>
-    </div>
+
+
 
 </section>
 
 <section id="experience">
-    <h2>Expérience</h2>
+    <div class="personal-projects">
+        <h3>Expérience professionelle</h3>
+        <div class="experience-grid">
+        <div class="project-card">
+            <div class="image-container">
+                <img src="assets/avanade.png" alt="Avanade">
+            </div>
+            <h3 class="project-title">Stage R&D</h3>
+            <p class="project-description">
+                J’ai participé au développement d’applications en réalité mixte sur HoloLens 2 en utilisant Unity et le MRTK, avec une attention particulière portée à l’ergonomie et à l’interaction utilisateur. En parallèle, j’ai contribué à la mise en place de processus métier via Microsoft Guides pour accompagner la digitalisation des gestes professionnels. Cette mission a également été l’occasion de structurer l’organisation du travail en mode agile en m’appuyant sur les outils d’Azure DevOps.
+            </p>
+            <div class="project-tags">
+                <span class="tag">Unity</span>
+                <span class="tag">C++</span>
+                <span class="tag">Hololens</span>
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="image-container">
+                <img src="assets/onepoint.png" alt="Onepoint">
+                <img src="assets/bnp.png" alt="BNP PARIBAS">
+            </div>
+            <h3 class="project-title">Développeuse full stack (Java/Angular)</h3>
+            <p class="project-description">
+                Dans le cadre d’un projet orienté audit interne, j’ai développé un module de supervision des données bancaires en Java/Angular, conçu pour faciliter le contrôle et la fiabilité des informations. J’ai également imaginé et intégré un outil de gestion des données statiques au sein d’une application de rapport annuel, afin d’en simplifier l’administration au quotidien. Pour améliorer la fluidité des échanges de données, j’ai configuré des buckets Amazon S3 sur AWS, et participé au déploiement de l’ensemble sur une infrastructure Kubernetes. Le tout s’est inscrit dans un environnement agile structuré autour de GitLab et JIRA.
+            </p>
+            <div class="project-tags">
+                <span class="tag">Java 11 & Spring Boot 2.7</span>
+                <span class="tag">Angular 14</span>
+                <span class="tag">Kubernetes</span>
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="image-container">
+                <img src="assets/alpha%20credit.png" alt="Alpha Credit">
+                <img src="assets/onepoint.png" alt="Onepoint">
+            </div>
+            <h3 class="project-title">Développeuse full stack (Java/Angular)</h3>
+            <p class="project-description">
+                J’ai piloté la refonte d’une application de gestion des notes de frais, depuis la phase de conception jusqu’à la mise en production. J’ai assuré le développement complet du front-end et du back-end, ainsi que la mise en place de leur communication. Enfin, j’ai accompagné les équipes dans la configuration et le maintien du déploiement de l’application sur une infrastructure Kubernetes.
+            </p>
+            <div class="project-tags">
+                <span class="tag">Java 17 & Spring Boot 2.7</span>
+                <span class="tag">Angular 16</span>
+                <span class="tag">Kubernetes</span>
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="image-container">
+                <img src="assets/alpha%20credit.png" alt="Alpha Credit">
+                <img src="assets/onepoint.png" alt="Onepoint">
+            </div>
+            <h3 class="project-title">Pilotage & Coaching</h3>
+            <p class="project-description">
+                J’ai assuré le pilotage de l’initiative IT Cloud Developer, avec pour objectif d’accompagner les développeurs dans la migration de leurs applications vers le Cloud. Cela impliquait à la fois un rôle de conseil sur la bonne configuration des déploiements et la garantie de leur alignement avec la stratégie technique globale de l’équipe.
+            </p>
+            <div class="project-tags">
+                <span class="tag">Documentation</span>
+                <span class="tag">Formations</span>
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="image-container">
+                <img src="assets/bred.png" alt="BRED">
+                <img src="assets/onepoint.png" alt="Onepoint">
+            </div>
+            <h3 class="project-title">Développeuse full stack (Java/Angular)</h3>
+            <p class="project-description">
+                J’ai dirigé la migration du site vitrine de la BRED en intégrant Strapi comme CMS headless, afin de moderniser la gestion des contenus. J’ai mis en place un backend permettant de récupérer, filtrer et transmettre les données vers le frontend, tout en gérant la validation des formulaires et l’envoi d’e-mails. J’ai également conçu et développé des interfaces responsives en Angular avec Bootstrap, en adaptant dynamiquement les contenus pour une expérience fluide sur web et mobile.
+            </p>
+            <div class="project-tags">
+                <span class="tag">Java 21 & Spring Boot 3.1</span>
+                <span class="tag">Angular 18</span>
+                <span class="tag">Kubernetes</span>
+            </div>
+        </div>
+            </div>
+    </div>
+</section>
+
+<section id="projects">
+    <h3>Projets personnels</h3>
     <ul>
-        <li>2023 - Dev Full Stack chez TechCorp</li>
-        <li>2021 - Frontend Dev chez WebStudio</li>
+        <li><a href="https://github.com/lbeliazi2/keycloak-angular" target="_blank">Keycloak Angular</a></li>
+        <li><a href="https://github.com/lbeliazi2/spotify-music-transfer" target="_blank">Spotify Music Transfer</a></li>
     </ul>
 </section>
 
-<section id="certifications">
+<section id="certifications" class="certifications-section">
     <h2>Certifications</h2>
-    <ul>
-        <li>Certification JavaScript - OpenClassrooms</li>
-        <li>React Avancé - Udemy</li>
-    </ul>
-</section>
-
-<section id="projets">
-    <h2>Projets Git</h2>
-    <ul>
-        <li><a href="https://github.com/jeandupont/portfolio" target="_blank">Portfolio</a></li>
-        <li><a href="https://github.com/jeandupont/app-chat" target="_blank">App de Chat</a></li>
-    </ul>
+    <div class="certification-grid">
+        <a href="https://www.credly.com/badges/10f20590-c361-408c-a4fa-2b11b58a9a07" target="_blank" class="certification-card">
+            <img src="assets/spring.png" alt="Spring Certified Developer" />
+            <p>Spring Certified Developer</p>
+        </a>
+        <a href="https://www.credly.com/badges/29ddbcac-d928-457d-b8ea-a642935609f6/linked_in?t=sdy41j" target="_blank" class="certification-card">
+            <img src="assets/ckad.png" alt="CKAD" />
+            <p>Certified Kubernetes Application Developer</p>
+        </a>
+    </div>
 </section>
 
 <script>
